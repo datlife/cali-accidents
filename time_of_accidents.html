@@ -1,0 +1,83 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            <div class="bk-root" id="ec4d4b84-d9bc-4464-8d28-de2ebf451032"></div>
+          
+        
+      
+      
+        <script type="application/json" id="e65a634f-f781-467f-8b12-6016783a5ad5">
+          {"458bf550-cfaa-44da-aae4-4d241a4e2395":{"roots":{"references":[{"attributes":{},"id":"a9012cfd-2606-4b37-abb6-8501b12be40e","type":"LinearScale"},{"attributes":{},"id":"1ab02c24-1c2c-4fb9-96f6-1e7546210969","type":"CategoricalTicker"},{"attributes":{"plot":{"id":"210f0ba1-deb8-4dc6-9261-af6ff248229a","subtype":"Figure","type":"Plot"},"ticker":{"id":"1ab02c24-1c2c-4fb9-96f6-1e7546210969","type":"CategoricalTicker"}},"id":"636d52d1-500c-4634-b2aa-9455bed2cda1","type":"Grid"},{"attributes":{"desired_num_ticks":9},"id":"c6ecc9dc-7c53-493a-b993-a517e671f76c","type":"BasicTicker"},{"attributes":{},"id":"181877f2-14b4-4f6c-899e-7313826b336c","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"210f0ba1-deb8-4dc6-9261-af6ff248229a","subtype":"Figure","type":"Plot"},"ticker":{"id":"181877f2-14b4-4f6c-899e-7313826b336c","type":"BasicTicker"}},"id":"6061ce00-e4cd-44a1-a71b-b8fdef15a9e5","type":"Grid"},{"attributes":{"below":[{"id":"43faebc5-569f-4edc-b36b-91ef7f4d5ca7","type":"CategoricalAxis"}],"left":[{"id":"2a90fd29-1174-4a47-8a64-ae3da75823fc","type":"LinearAxis"}],"plot_height":720,"plot_width":1400,"renderers":[{"id":"43faebc5-569f-4edc-b36b-91ef7f4d5ca7","type":"CategoricalAxis"},{"id":"636d52d1-500c-4634-b2aa-9455bed2cda1","type":"Grid"},{"id":"2a90fd29-1174-4a47-8a64-ae3da75823fc","type":"LinearAxis"},{"id":"6061ce00-e4cd-44a1-a71b-b8fdef15a9e5","type":"Grid"},{"id":"315bc612-7160-4731-a51c-622c848594a5","type":"GlyphRenderer"},{"id":"8a9fefe8-899b-44ac-b310-74c855aab3d9","type":"ColorBar"}],"right":[{"id":"8a9fefe8-899b-44ac-b310-74c855aab3d9","type":"ColorBar"}],"title":{"id":"ef409b4d-0cd0-4ee7-9105-29b2eae827ff","type":"Title"},"toolbar":{"id":"44d0dedf-8e32-4ea5-90c2-aaad80176901","type":"Toolbar"},"toolbar_location":"below","x_range":{"id":"d1d5cedb-1903-4700-8d36-c1548bfcff4f","type":"FactorRange"},"x_scale":{"id":"efac6efa-7f70-405e-94ba-f04cf18d4abb","type":"CategoricalScale"},"y_range":{"id":"9a2350f7-f105-4ee4-9e48-159a26d58857","type":"Range1d"},"y_scale":{"id":"a9012cfd-2606-4b37-abb6-8501b12be40e","type":"LinearScale"}},"id":"210f0ba1-deb8-4dc6-9261-af6ff248229a","subtype":"Figure","type":"Plot"},{"attributes":{"high":72,"low":5,"palette":["#fff7fb","#ece7f2","#d0d1e6","#a6bddb","#74a9cf","#3690c0","#0570b0","#045a8d","#023858"]},"id":"f607544d-9b84-4c59-93ae-46c460b9222d","type":"LinearColorMapper"},{"attributes":{"source":{"id":"fd5265ad-d90f-4dfd-89f2-0f8d6fa933e9","type":"ColumnDataSource"}},"id":"6a7875d9-f417-4f99-b65f-94da5b10a41a","type":"CDSView"},{"attributes":{"callback":null,"renderers":"auto","tooltips":[["Number of accidents","@count"],["Day","@dayofweek"],["Time","@{crash hour}"]]},"id":"05dc19ee-9bd7-4246-97c9-5b24f513d694","type":"HoverTool"},{"attributes":{"axis_label":"Day of the Week","axis_line_color":{"value":null},"formatter":{"id":"85e7e58e-a577-44df-90e6-d8623fb409ac","type":"CategoricalTickFormatter"},"major_label_text_font_size":{"value":"12pt"},"major_tick_line_color":{"value":null},"plot":{"id":"210f0ba1-deb8-4dc6-9261-af6ff248229a","subtype":"Figure","type":"Plot"},"ticker":{"id":"1ab02c24-1c2c-4fb9-96f6-1e7546210969","type":"CategoricalTicker"}},"id":"43faebc5-569f-4edc-b36b-91ef7f4d5ca7","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"units":"data","value":1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"width":{"units":"data","value":1},"x":{"field":"dayofweek"},"y":{"field":"crash hour"}},"id":"9784d2d8-1a66-497e-9477-82c88a88f107","type":"Rect"},{"attributes":{"callback":null,"end":0,"start":24},"id":"9a2350f7-f105-4ee4-9e48-159a26d58857","type":"Range1d"},{"attributes":{"callback":null,"data":{"count":[20,26,31,47,11,19,24,27,21,36,32,12,14,12,20,12,57,54,16,12,6,14,15,42,27,9,5,12,19,21,35,32,11,16,18,35,20,38,18,39,29,27,14,29,16,22,32,35,17,22,18,18,7,14,13,22,16,12,14,12,16,12,41,18,34,23,27,17,22,7,18,21,19,39,33,43,18,15,27,41,27,29,14,13,31,24,26,26,13,30,22,25,16,12,25,30,23,35,46,21,33,45,28,26,23,32,39,42,27,31,20,25,34,35,37,27,22,34,53,49,42,41,39,38,42,43,48,43,38,56,44,37,44,39,31,25,35,45,23,34,39,51,44,38,42,18,43,72,36,35,40,29,34,44,48,25,36,35,26,39,24,35,26,41,35,34,20,25,7,10,8,12,6,6,9],"crash hour":[0,0,0,0,0,0,0,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,9,9,9,9,9,9,9,10,10,10,10,10,10,10,11,11,11,11,11,11,11,12,12,12,12,12,12,12,13,13,13,13,13,13,13,14,14,14,14,14,14,14,15,15,15,15,15,15,15,16,16,16,16,16,16,16,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,20,20,20,20,20,20,20,21,21,21,21,21,21,21,22,22,22,22,22,22,22,23,23,23,23,23,23,23,24,24,24,24,24,24,24],"dayofweek":["Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday","Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday"],"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174]},"selected":{"id":"a6b6095a-ad42-4807-a63a-fe0cbb6403e2","type":"Selection"},"selection_policy":{"id":"346236d1-041d-4247-a390-dd8745f2c611","type":"UnionRenderers"}},"id":"fd5265ad-d90f-4dfd-89f2-0f8d6fa933e9","type":"ColumnDataSource"},{"attributes":{},"id":"5c2e36f7-a945-4078-97d2-5483ea38c1c1","type":"SaveTool"},{"attributes":{"align":"center","plot":null,"text":"Number of Accidents at Certain Hour in A Week","text_font_size":{"value":"15pt"}},"id":"ef409b4d-0cd0-4ee7-9105-29b2eae827ff","type":"Title"},{"attributes":{},"id":"0eeb2b39-2d58-43bb-b36b-52c9cb7d144d","type":"BasicTickFormatter"},{"attributes":{"data_source":{"id":"fd5265ad-d90f-4dfd-89f2-0f8d6fa933e9","type":"ColumnDataSource"},"glyph":{"id":"3756a7a8-6d6d-4596-acf1-ce3166b0e63d","type":"Rect"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"9784d2d8-1a66-497e-9477-82c88a88f107","type":"Rect"},"selection_glyph":null,"view":{"id":"6a7875d9-f417-4f99-b65f-94da5b10a41a","type":"CDSView"}},"id":"315bc612-7160-4731-a51c-622c848594a5","type":"GlyphRenderer"},{"attributes":{"fill_color":{"field":"count","transform":{"id":"f607544d-9b84-4c59-93ae-46c460b9222d","type":"LinearColorMapper"}},"height":{"units":"data","value":1},"line_color":{"value":null},"width":{"units":"data","value":1},"x":{"field":"dayofweek"},"y":{"field":"crash hour"}},"id":"3756a7a8-6d6d-4596-acf1-ce3166b0e63d","type":"Rect"},{"attributes":{"color_mapper":{"id":"f607544d-9b84-4c59-93ae-46c460b9222d","type":"LinearColorMapper"},"formatter":{"id":"f277549f-e6d9-4ba6-987e-77aa011475bb","type":"BasicTickFormatter"},"location":[0,0],"plot":{"id":"210f0ba1-deb8-4dc6-9261-af6ff248229a","subtype":"Figure","type":"Plot"},"ticker":{"id":"c6ecc9dc-7c53-493a-b993-a517e671f76c","type":"BasicTicker"}},"id":"8a9fefe8-899b-44ac-b310-74c855aab3d9","type":"ColorBar"},{"attributes":{"callback":null,"factors":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]},"id":"d1d5cedb-1903-4700-8d36-c1548bfcff4f","type":"FactorRange"},{"attributes":{},"id":"a6b6095a-ad42-4807-a63a-fe0cbb6403e2","type":"Selection"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"05dc19ee-9bd7-4246-97c9-5b24f513d694","type":"HoverTool"},{"id":"5c2e36f7-a945-4078-97d2-5483ea38c1c1","type":"SaveTool"}]},"id":"44d0dedf-8e32-4ea5-90c2-aaad80176901","type":"Toolbar"},{"attributes":{},"id":"346236d1-041d-4247-a390-dd8745f2c611","type":"UnionRenderers"},{"attributes":{"axis_label":"Crash Hour (24-hour scale)","axis_line_color":{"value":null},"formatter":{"id":"0eeb2b39-2d58-43bb-b36b-52c9cb7d144d","type":"BasicTickFormatter"},"major_label_text_font_size":{"value":"12pt"},"major_tick_line_color":{"value":null},"plot":{"id":"210f0ba1-deb8-4dc6-9261-af6ff248229a","subtype":"Figure","type":"Plot"},"ticker":{"id":"181877f2-14b4-4f6c-899e-7313826b336c","type":"BasicTicker"}},"id":"2a90fd29-1174-4a47-8a64-ae3da75823fc","type":"LinearAxis"},{"attributes":{},"id":"f277549f-e6d9-4ba6-987e-77aa011475bb","type":"BasicTickFormatter"},{"attributes":{},"id":"efac6efa-7f70-405e-94ba-f04cf18d4abb","type":"CategoricalScale"},{"attributes":{},"id":"85e7e58e-a577-44df-90e6-d8623fb409ac","type":"CategoricalTickFormatter"}],"root_ids":["210f0ba1-deb8-4dc6-9261-af6ff248229a"]},"title":"Bokeh Application","version":"0.13.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('e65a634f-f781-467f-8b12-6016783a5ad5').textContent;
+                  var render_items = [{"docid":"458bf550-cfaa-44da-aae4-4d241a4e2395","roots":{"210f0ba1-deb8-4dc6-9261-af6ff248229a":"ec4d4b84-d9bc-4464-8d28-de2ebf451032"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
